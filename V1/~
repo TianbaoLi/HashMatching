@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	FILE *fp;
+	int i;
+	fp=fopen("2.txt","r");
+	for(i=0;i<500;i++)
+		printf("%c ",fgetc(fp));
+	fclose(fp);
+	return 0;
+}
+
